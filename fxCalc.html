@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Ryan's F/X Calculator</title>
+        <link href="css/main.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <!--Basically unmodified from Lab2. By the time we reach future labs, the HTML file will be useless and all functionality will be found in the PHP file.
+    This file is a static form that is dynamically linked to a PHP version of this page which replaces hardcoded data with PHP scriplets to make it dynamic and provide calculations.
+    -->    
+
+    <body>
+        <header>
+            <h1>Ryan's Super F/X Calculator</h1>
+        </header>
+        <br/>
+        <main>
+            <form name="fxCalc" action="fxCalc.php" method="post">
+                <h3>Choose your source currency code and enter the amount as precise as you want it.</h3>
+                <select name="sourceCurrency">
+                    <option value="CAD">CAD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="USD">USD</option>
+                </select>
+
+                <input type="text" name="sourceAmount" value="" class="textField"/>
+                <br/>
+
+                <h3>Now choose your destination currency code and click CALCULATE to receive your result!</h3>
+                <select name="destCurrency">
+                    <option value="CAD">CAD</option>
+                    <option value="EUR">EUR</option>
+                    <option value="GBP">GBP</option>
+                    <option value="USD">USD</option>
+                </select>
+
+                <input type="text" name="destAmount" value="" disabled="disabled" class="textField"/>
+
+                <br/><br/>
+
+                <input type="submit" value="CALCULATE" class="button"/>
+                <input type="reset" value="RESET" class="button"/>
+
+            </form>
+        </main>
+        <br/>
+
+        <footer>
+            <p>Copyright (c) 2019 Ryan Lasher. Unauthorized copying of my student work is not the right thing to do, but be inspired by the way I designed my page and come up with your own creative implementation!</p>
+        </footer>
+    </body>
+</html>
